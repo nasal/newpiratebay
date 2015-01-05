@@ -8,8 +8,7 @@ Theme for [isoHunt's openbay](https://github.com/isohuntto/openbay).
 Installation
 ---
 
-1. Create a new folder called *newpiratebay* inside openbay/www/themes folder (next to the oldpiratebay),
-1. Download the theme into the newly created folder,
+1. Download the theme into the openbay/www/themes folder (next to the oldpiratebay),
 2. Open the openbay/protected/config/config.php file,
 3. Change *'theme' => 'oldpiratebay',* to *'theme' => 'newpiratebay',* on line 5,
 4. Done.
