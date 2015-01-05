@@ -13,3 +13,8 @@ Installation
 3. Change *'theme' => 'oldpiratebay',* to *'theme' => 'newpiratebay',* on line 5,
 4. Copy *npb_logo.png* to *openbay/www/img*,
 5. Done.
+
+Note
+---
+
+This is just a quick mockup, the new CSS code is inside the head.php file, a lot of code commented, the main page is hardcoded (the table) etc. It's messy :)
