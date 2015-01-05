@@ -21,14 +21,14 @@
         
         #header #logo { height: 40px; }
         
-        #header ul { list-style: none; margin: 11px 0 0; font-size: 1.1em; padding: 0; }
+        #header ul { list-style: none; margin: 11px 0; font-size: 1.1em; padding: 0; }
         #header ul li { display: inline; }
         #header ul li a { color: #ABABAB; text-transform: uppercase; display: inline-block; margin-right: 2em; transition: .2s; }
         #header ul li a:hover { border-bottom: none; color: white; text-decoration: none; }
         #header ul li a.active { color: white; }
         
         #search #q { text-align: right; position: relative; }
-        #search input { background: #343434; padding: 10px 15px; color: #aaa; border: none; font-family: 'Lato', sans-serif; width: 70%; text-indent: 0; }
+        #search input { background: #343434; padding: 10px 15px; color: #aaa; border: none; font-family: 'Lato', sans-serif; width: 100%; text-indent: 0; }
         #search #searchIcon { color: #aaa; position: absolute; right: 15px; top: 14px; }
         
         #categories { background: #ECECEC; padding: 1em 0; text-align: left; }
@@ -72,17 +72,17 @@
     <div id="header">
         <div class="container">
             <div class="row">
-                <div class="col-md-1 col-sm-1">
-                    <a href="/"><img src="/img/npb_logo.jpeg" id="logo"></a>
+                <div class="col-md-1 col-sm-1 col-xs-2">
+                    <a href="/"><img src="/img/npb_logo.png" id="logo"></a>
                 </div>
-                <ul id="mainMenu" class="col-md-7 col-sm-8">
+                <ul id="mainMenu" class="col-md-7 col-sm-8 col-xs-10">
                     <li><a href="<?= Yii::app()->createUrl('main/browse'); ?>" <?= ($this->getAction()->getId() == 'browse' || $this->getAction()->getId() == 'index' || Yii::app()->request->getParam('iht') ? 'class="active"' : ''); ?>>Browse</a></li>
                     <li><a href="<?= Yii::app()->createUrl('main/recent'); ?>" <?= ($this->getAction()->getId() == 'recent' ? 'class="active"' : ''); ?>>Recent</a></li>
                     <li><a href="#">Top 100</a></li>
                     <li><a href="#">Sign In</a></li>
                     <li><a href="#">Register</a></li>
                 </ul>
-                <div id="search" class="col-md-4 col-sm-3">
+                <div id="search" class="col-md-4 col-sm-3 col-xs-12">
                     <form method="get" id="q" action="<?= $this->createUrl('main/search'); ?>">
                         <input type="text" name="q" placeholder="Search" value="<?= CHtml::encode(Yii::app()->request->getParam('q')); ?>">
                         <i class="glyphicon glyphicon-search" id="searchIcon"></i>
@@ -95,7 +95,7 @@
     <div id="categories">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-8 col-sm-8">
                     <ul id="categoryMenu">
                         <li><a href="/">All</a></li>
                         <li><a href="/search?iht=5" <?= (Yii::app()->request->getParam('iht') == '5' ? 'class="active"' : ''); ?>>Movies</a></li>
@@ -106,7 +106,7 @@
                         <li><a href="/search?iht=7" <?= (Yii::app()->request->getParam('iht') == '7' ? 'class="active"' : ''); ?>>Other</a></li>
                     </ul>
                 </div>
-                <div id="searchResultsCount" class="col-md-4 text-right">
+                <div id="searchResultsCount" class="col-md-4 col-sm-4 text-right">
                     Around 1,000 search results.
                 </div>
             </div>

@@ -3,7 +3,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-1">
-					<a href="/"><img src="/img/npb_logo.jpeg" id="logo" style="height: 50px;"></a>
+					<a href="/"><img src="/img/npb_logo.png" id="logo" style="height: 50px;"></a>
 				</div>
 				<div class="col-md-11">
 					<a href="#">Login</a> | <a href="#">Register</a> | <a href="#">Language</a> | <a href="#">About</a> | <a href="#">Legal threats</a> | <a href="#">Blog</a>
