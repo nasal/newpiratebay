@@ -24,7 +24,7 @@ If you *don't* have [Grunt](http://gruntjs.com/) installed you should:
 4. Read [this](http://24ways.org/2013/grunt-is-not-weird-and-hard/) tutorial and set it up, or
 5. Move the files in *newpiratebay/css/* and *newpiratebay/js/* to */openbay/www/css/* and */openbay/www/css/js/*,
 6. Move *newpiratebay/npb_logo.png* to */openbay/www/img/*,
-7. Edit lines 20 and 21 in *newpiratebay/views/layouts/head.php* to include the correct files (newpiratebay.css and newpiratebay.js instead of the minified versions).
+7. Edit lines 22 and 23 in *newpiratebay/views/layouts/head.php* to include the correct files (newpiratebay.css and newpiratebay.js instead of the minified versions).
 
 Note
 ---
