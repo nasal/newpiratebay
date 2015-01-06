@@ -13,7 +13,7 @@
         Yii::app()->clientScript->registerPackage('base');
         Yii::app()->clientScript->registerCoreScript('jquery');
     ?>
-    <link rel="stylesheet" href="/assets/603d1d82/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <style>
         html, body { font-family: 'Lato', sans-serif; }
         
