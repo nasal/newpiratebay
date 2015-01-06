@@ -13,41 +13,14 @@
         Yii::app()->clientScript->registerPackage('base');
         Yii::app()->clientScript->registerCoreScript('jquery');
     ?>
+
+    <!-- newpiratebay -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <style>
-        html, body { font-family: 'Lato', sans-serif; }
-        
-        #header { background: #16161d; padding: 1em 0; text-align: left; }
-        
-        #header #logo { height: 40px; }
-        
-        #header ul { list-style: none; margin: 11px 0; font-size: 1.1em; padding: 0; }
-        #header ul li { display: inline; }
-        #header ul li a { color: #ABABAB; text-transform: uppercase; display: inline-block; margin-right: 2em; transition: .2s; }
-        #header ul li a:hover { border-bottom: none; color: white; text-decoration: none; }
-        #header ul li a.active { color: white; }
-        
-        #search #q { text-align: right; position: relative; }
-        #search input { background: #343434; padding: 10px 15px; color: #aaa; border: none; font-family: 'Lato', sans-serif; width: 100%; text-indent: 0; }
-        #search #searchIcon { color: #aaa; position: absolute; right: 15px; top: 14px; }
-        
-        #categories { background: #ECECEC; padding: 1em 0; text-align: left; }
-        
-        #categories ul { float: left; list-style: none; margin: .5em 0; padding: 0; }
-        #categories ul li { display: inline; }
-        #categories ul li a { display: inline-block; margin-right: 2em; color: #8B8B8B; border: none; transition: .2s; }
-        #categories ul li a:hover { color: black; text-decoration: none; }
-        #categories ul li a.active { color: black; font-weight: bold; }
-        
-        #categories #searchResultsCount { float: right; margin-top: .5em; }
-        
-        #title { font-weight: bold; font-size: 1.5em; text-align: left; }
-        
-        #footer { background: black; text-align: center; padding: 2em 0; color: white; }
-        #footer a { color: white; border: none; }
-        #footer #credits { font-size: .8em; margin-top: 1em; color: #A9A9A9; }
-    </style>
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <!-- Edit here if you didn't install with Grunt. -->
+    <link rel="stylesheet" href="/css/newpiratebay.min.css">
+    <script src="/js/newpiratebay.min.js"></script>
 </head>
 <body>
     <script>
@@ -57,15 +30,6 @@
                 inputCheckBox.attr('checked', false);
                 $(this).attr('checked', true);
             });
-            
-            $('#q input').focus(function(e) {
-                $(this).animate({ 'width': '100%' });
-            });
-            
-            $('#q input').blur(function(e) {
-                $(this).animate({ 'width': '70%' });
-            });
-            
         });
     </script>
     

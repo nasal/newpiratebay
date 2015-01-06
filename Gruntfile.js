@@ -5,27 +5,27 @@ module.exports = function(grunt) {
 
         uglify: {
             build: {
-                src: 'js/newpiratebay.js',
-                dest: '../../js/newpiratebay.min.js'
+                src: 'newpiratebay/js/newpiratebay.js',
+                dest: '../js/newpiratebay.min.js'
             }
         },
 
         cssmin: {
             target: {
                 files: {
-                    '../../css/newpiratebay.min.css': ['css/newpiratebay.css']
+                    '../css/newpiratebay.min.css': ['newpiratebay/css/newpiratebay.css']
                 }
             }
         },
 
         copy: {
             main: {
-                src: 'npb_logo.png',
-                dest: '../../img/npb_logo.png',
+                src: 'newpiratebay/npb_logo.png',
+                dest: '../img/npb_logo.png',
             },
         },
 
-        clean: ['js', 'css', 'npb_logo.png'],
+        clean: ['newpiratebay/js', 'newpiratebay/css', 'newpiratebay/npb_logo.png'],
 
     });
 
